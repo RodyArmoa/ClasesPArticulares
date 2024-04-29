@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/iconImageView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:paddingLeft="4dp"
+                app:srcCompat="@drawable/contact_mail_fill0_wght400_grad0_opsz48" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/iconImageView"
+                android:layout_toRightOf="@+id/iconImageView"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nombreTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="Rody"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ubicacionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="Bilbao"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/asignaturaTexView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+                android:text="Asignatura"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/contactoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/asignaturaTexView"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+                android:text="Contacto"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/imageButtonFavoritos"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_favoritos_nav"
+            android:layout_alignTop="@id/cv"
+            android:layout_alignEnd="@id/cv"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp" />
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

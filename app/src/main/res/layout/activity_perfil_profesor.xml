@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilProfesorActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/nombrePerfilTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+ />
+
+    <TextView
+        android:id="@+id/nombrePerfilTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/apellidoPerfilTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/nombrePerfilTextView"
+        app:layout_constraintTop_toBottomOf="@+id/nombrePerfilTextView" />
+
+    <TextView
+        android:id="@+id/ubicacionPerfilTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubicación:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/apellidoPerfilTextView"
+        app:layout_constraintTop_toBottomOf="@+id/apellidoPerfilTextView" />
+
+    <TextView
+        android:id="@+id/asignaturasPerfilTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asignaturas:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/ubicacionPerfilTextView"
+        app:layout_constraintTop_toBottomOf="@+id/ubicacionPerfilTextView" />
+
+    <TextView
+        android:id="@+id/telefonoPerfilTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teléfono:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/asignaturasPerfilTextView"
+        app:layout_constraintTop_toBottomOf="@+id/asignaturasPerfilTextView" />
+
+    <Button
+        android:id="@+id/btnPerfilVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="16dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="hint_color">#A5A5A5</color> <!-- Color del hint -->
+    <color name="text_color">#000000</color> <!-- Color del texto -->
+    <color name="edittext_border_color">#CCCCCC</color> <!-- Color del borde -->
+    <color name="colorTheme">#8CE6F3 </color> <!--color del tema-->
+
+</resources>

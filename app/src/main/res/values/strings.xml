@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Clasesparticulares</string>
+
+    --Campo registro---
+    <string name="registro_Nombre">nombre</string>
+    <string name="registro_Apellido">Apellido</string>
+    <string name="registro_email">Email</string>
+    <string name="registro_Contraseña">Contraseña</string>
+    <string name="registro_repetirContraseña">Repetir Contraseña</string>
+
+    --Campo perfil Alumno---
+    <string name="nombre_perfil">NOmbre</string>
+</resources>

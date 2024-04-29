@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_favoritos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ListaProfeActivity">
+
+
+    <TextView
+        android:id="@+id/title_id_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="20dp"
+        android:text="Favoritos"
+        android:textColor="@android:color/black"
+        android:textSize="36sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/title_id_View"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_gravity="fill_vertical" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:itemBackground="@color/white"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="#8CE6F3"
+        app:menu="@menu/menu_nav" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
